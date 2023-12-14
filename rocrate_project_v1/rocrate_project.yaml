@@ -1,0 +1,22 @@
+id: https://example.com/ro-crate-project
+name: roCrateProject
+prefixes:
+  linkml: https://w3id.org/linkml/
+
+  rop: https://example.com/ro-crate-project
+imports:
+  - linkml:types
+default_range: string
+default_prefix: rop
+
+classes:
+  Project:
+    attributes:
+      name: 
+      description: 
+      identifier: 
+      version: 
+      datePublished:
+      license: 
+      keywords: 
+      url: 
