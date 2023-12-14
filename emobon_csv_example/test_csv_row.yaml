@@ -1,0 +1,304 @@
+id: https://example.com/data
+name: DataModel
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: https://example.com/data
+  xsd: http://www.w3.org/2001/XMLSchema#
+
+default_prefix: schema
+
+types:
+  string:
+    base: str
+    uri: xsd:string
+  integer:
+    base: int
+    uri: xsd:integer
+  float:
+    base: float
+    uri: xsd:float
+
+classes:
+  DataRow:
+    description: A row of data
+    slots:
+      - source_mat_id
+      - sea_surf_temp
+      - sea_surf_temp_method
+      - ph
+      - ph_method
+      - sediment_temp
+      - sediment_temp_method
+      - redox_potential
+      - redox_potential_method
+      - alkalinity
+      - alkalinity_method
+      - ammonium
+      - ammonium_method
+      - bac_prod
+      - bac_prod_method
+      - biomass
+      - biomass_method
+      - chem_administration
+      - chlorophyll
+      - chlorophyll_method
+      - diss_carb_dioxide
+      - diss_carb_dioxide_method
+      - diss_inorg_carb
+      - diss_inorg_carb_method
+      - diss_org_carb
+      - diss_org_carb_method
+      - diss_org_nitro
+      - diss_org_nitro_method
+      - diss_oxygen
+      - diss_oxygen_method
+      - magnesium
+      - magnesium_method
+      - methane
+      - methane_method
+      - n_alkanes
+      - n_alkanes_method
+      - nitrate
+      - nitrate_method
+      - nitrite
+      - nitrite_method
+      - organism_count
+      - organism_count_method
+      - oxy_stat_samp
+      - part_org_carb
+      - part_org_carb_method
+      - part_org_nitro
+      - part_org_nitro_method
+      - particle_class
+      - petroleum_hydrocarb
+      - petroleum_hydrocarb_method
+      - phaeopigments
+      - phaeopigments_method
+      - phosphate
+      - phosphate_method
+      - pigments
+      - pigments_method
+      - porosity
+      - pressure
+      - pressure_method
+      - sea_surf_salinity
+      - sea_surf_salinity_method
+      - silicate
+      - silicate_method
+      - sulfate
+      - sulfate_method
+      - sulfide
+      - sulfide_method
+      - water_current
+      - water_current_method
+
+slots:
+  source_mat_id:
+    description: The source material ID
+    range: string
+    required: true
+    pattern: ^EMOBON_BPNS_So_\d{6}_[a-z_]+[0-9a-z]+$
+  sea_surf_temp:
+    description: The sea surface temperature
+    range: float
+  sea_surf_temp_method:
+    description: The method used to measure the sea surface temperature
+    range: string
+  ph:
+    description: The pH level
+    range: float
+  ph_method:
+    description: The method used to measure the pH level
+    range: string
+  sediment_temp:
+    description: The sediment temperature
+    range: float
+  sediment_temp_method:
+    description: The method used to measure the sediment temperature
+    range: string
+  redox_potential:
+    description: The redox potential
+    range: float
+  redox_potential_method:
+    description: The method used to measure the redox potential
+    range: string
+  alkalinity:
+    description: The alkalinity
+    range: float
+  alkalinity_method:
+    description: The method used to measure the alkalinity
+    range: string
+  ammonium:
+    description: The ammonium level
+    range: float
+  ammonium_method:
+    description: The method used to measure the ammonium level
+    range: string
+  bac_prod:
+    description: The bacterial production
+    range: float
+  bac_prod_method:
+    description: The method used to measure the bacterial production
+    range: string
+  biomass:
+    description: The biomass
+    range: float
+  biomass_method:
+    description: The method used to measure the biomass
+    range: string
+  chem_administration:
+    description: The chemical administration
+    range: string
+  chlorophyll:
+    description: The chlorophyll level
+    range: float
+  chlorophyll_method:
+    description: The method used to measure the chlorophyll level
+    range: string
+  diss_carb_dioxide:
+    description: The dissolved carbon dioxide level
+    range: float
+  diss_carb_dioxide_method:
+    description: The method used to measure the dissolved carbon dioxide level
+    range: string
+  diss_inorg_carb:
+    description: The dissolved inorganic carbon level
+    range: float
+  diss_inorg_carb_method:
+    description: The method used to measure the dissolved inorganic carbon level
+    range: string
+  diss_org_carb:
+    description: The dissolved organic carbon level
+    range: float
+  diss_org_carb_method:
+    description: The method used to measure the dissolved organic carbon level
+    range: string
+  diss_org_nitro:
+    description: The dissolved organic nitrogen level
+    range: float
+  diss_org_nitro_method:
+    description: The method used to measure the dissolved organic nitrogen level
+    range: string
+  diss_oxygen:
+    description: The dissolved oxygen level
+    range: float
+  diss_oxygen_method:
+    description: The method used to measure the dissolved oxygen level
+    range: string
+  magnesium:
+    description: The magnesium level
+    range: float
+  magnesium_method:
+    description: The method used to measure the magnesium level
+    range: string
+  methane:
+    description: The methane level
+    range: float
+  methane_method:
+    description: The method used to measure the methane level
+    range: string
+  n_alkanes:
+    description: The n-alkanes level
+    range: float
+  n_alkanes_method:
+    description: The method used to measure the n-alkanes level
+    range: string
+  nitrate:
+    description: The nitrate level
+    range: float
+  nitrate_method:
+    description: The method used to measure the nitrate level
+    range: string
+  nitrite:
+    description: The nitrite level
+    range: float
+  nitrite_method:
+    description: The method used to measure the nitrite level
+    range: string
+  organism_count:
+    description: The organism count
+    range: float
+  organism_count_method:
+    description: The method used to measure the organism count
+    range: string
+  oxy_stat_samp:
+    description: The oxygen saturation sample
+    range: string
+  part_org_carb:
+    description: The particulate organic carbon level
+    range: float
+  part_org_carb_method:
+    description: The method used to measure the particulate organic carbon level
+    range: string
+  part_org_nitro:
+    description: The particulate organic nitrogen level
+    range: float
+  part_org_nitro_method:
+    description: The method used to measure the particulate organic nitrogen level
+    range: string
+  particle_class:
+    description: The particle class
+    range: string
+  petroleum_hydrocarb:
+    description: The petroleum hydrocarbon level
+    range: float
+  petroleum_hydrocarb_method:
+    description: The method used to measure the petroleum hydrocarbon level
+    range: string
+  phaeopigments:
+    description: The phaeopigments level
+    range: float
+  phaeopigments_method:
+    description: The method used to measure the phaeopigments level
+    range: string
+  phosphate:
+    description: The phosphate level
+    range: float
+  phosphate_method:
+    description: The method used to measure the phosphate level
+    range: string
+  pigments:
+    description: The pigments level
+    range: float
+  pigments_method:
+    description: The method used to measure the pigments level
+    range: string
+  porosity:
+    description: The porosity
+    range: float
+  pressure:
+    description: The pressure
+    range: float
+  pressure_method:
+    description: The method used to measure the pressure
+    range: string
+  sea_surf_salinity:
+    description: The sea surface salinity
+    range: float
+  sea_surf_salinity_method:
+    description: The method used to measure the sea surface salinity
+    range: string
+  silicate:
+    description: The silicate level
+    range: float
+  silicate_method:
+    description: The method used to measure the silicate level
+    range: string
+  sulfate:
+    description: The sulfate level
+    range: float
+  sulfate_method:
+    description: The method used to measure the sulfate level
+    range: string
+  sulfide:
+    description: The sulfide level
+    range: float
+  sulfide_method:
+    description: The method used to measure the sulfide level
+    range: string
+  water_current:
+    description: The water current
+    range: float
+  water_current_method:
+    description: The method used to measure the water current
+    range: string
